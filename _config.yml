@@ -1,2 +1,2 @@
-exclude:
-  - img/
+# exclude:
+#   - img/
