@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favoflex - FAQ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #FFA500;
+            margin-bottom: 30px;
+        }
+        .faq-item {
+            border: 2px solid #367588;
+            border-radius: 15px;
+            margin-bottom: 15px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        .faq-question {
+            background-color: #367588;
+            color: #fff;
+            cursor: pointer;
+            padding: 15px 20px;
+            font-size: 18px;
+            border: none;
+            width: 100%;
+            text-align: left;
+            outline: none;
+            transition: background 0.3s ease;
+        }
+        .faq-question:hover {
+            background-color: #2b5f6f;
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            background: #f1f1f1;
+            transition: max-height 0.4s ease, padding 0.4s ease;
+            padding: 0 20px;
+            border-top: 1px solid #ddd;
+            border-radius: 0 0 15px 15px;
+        }
+        .faq-answer p {
+            color: #555;
+            margin: 15px 0;
+        }
+        .active .faq-answer {
+            max-height: 200px;
+            padding: 15px 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Frequently Asked Questions (FAQ)</h1>
+
+        <div class="faq-item">
+            <button class="faq-question">1. What is Favoflex?</button>
+            <div class="faq-answer">
+                <p>Favoflex is a multi-vendor marketplace where you can customize and purchase apparel and other products from various sellers.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">2. How do I place an order?</button>
+            <div class="faq-answer">
+                <p>Simply browse products, customize if needed, add to cart, and complete your purchase through our secure checkout.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">3. Can I track my order?</button>
+            <div class="faq-answer">
+                <p>Yes, once your order is shipped, you'll receive a tracking link via email or SMS.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">4. What is the return policy?</button>
+            <div class="faq-answer">
+                <p>We offer returns within 7 days of delivery for non-customized items. Customized products are non-returnable unless defective.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">5. How can I contact customer support?</button>
+            <div class="faq-answer">
+                <p>You can reach out to us via the Contact Us page or email us at support@favoflex.com.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        const questions = document.querySelectorAll('.faq-question');
+        questions.forEach(q => {
+            q.addEventListener('click', () => {
+                const parent = q.parentElement;
+                parent.classList.toggle('active');
+
+                // Close others
+                questions.forEach(otherQ => {
+                    if (otherQ !== q) {
+                        otherQ.parentElement.classList.remove('active');
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
