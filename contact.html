@@ -3,33 +3,36 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Favoflex - FAQ</title>
+  <title>Favoflex - Contact Us</title>
+  <!-- Bootstrap Icons CDN -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
   <style>
+    /* Global transition for all elements */
     * {
-      transition: all 0.3s ease;
+      transition: all 0.3s ease; /* Transition for all properties */
     }
 
     body {
       font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
+      margin: 0 !important;
+      padding: 0 !important;
       background-color: #f9f9f9;
-      overflow-x: hidden;
+      overflow-x: hidden; /* Prevent horizontal scrolling */
     }
 
+    /* Navbar */
     .navbar {
       background-color: #FFA500;
       padding: 15px 30px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Added box shadow */
     }
 
     .navbar .logo img {
-      height: 50px;
-      border-radius: 5px;
+      height: 50px; /* Logo height */
+      border-radius: 5px; /* Logo border radius */
     }
 
     .navbar ul {
@@ -54,6 +57,7 @@
       color: #367588;
     }
 
+    /* Container */
     .container {
       max-width: 800px;
       margin: 40px auto;
@@ -79,10 +83,11 @@
       line-height: 1.7;
     }
 
+    /* Footer */
     footer {
-      background-color: #367588;
+      background-color: #367588; /* Changed to secondary color */
       color: #fff;
-      padding: 45px;
+      padding: 45px 30px; /* Updated padding */
       text-align: center;
       position: relative;
       bottom: 0;
@@ -90,7 +95,7 @@
       display: flex;
       justify-content: space-around;
       gap: 30px;
-      box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1); /* Box shadow */
     }
 
     footer .footer-section {
@@ -111,7 +116,7 @@
     }
 
     footer .footer-section a:hover {
-      color: #FFA500;
+      color: #FFA500; /* Hover color changes to orange */
     }
 
     footer .social-icons {
@@ -135,10 +140,11 @@
       font-weight: bold;
     }
 
+    /* Footer email and office address text */
     footer .footer-section p {
-      color: #f1f1f1;
+      color: #f1f1f1; /* Lighter color for better visibility */
       font-size: 14px;
-      display: inline;
+      display: inline; /* Make it inline for same-line display */
     }
 
     footer .footer-section .email {
@@ -146,22 +152,109 @@
       margin-left: 5px;
     }
 
+    /* Responsive Styles */
     @media (max-width: 768px) {
       footer {
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 45px;
+        text-align: center;
+        padding: 20px;
       }
 
       footer .footer-section {
-        text-align: center;
-        margin-bottom: 20px;
-        flex: none;
+        margin-bottom: 15px;
+      }
+    }
+     /* Global reset */
+     * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #FFA500;
+      margin-bottom: 20px;
+      font-size: 36px;
+    }
+
+    /* Form styling */
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    label {
+      font-size: 16px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    input[type="text"], input[type="email"], textarea {
+      width: 100%;
+      padding: 12px;
+      border: 2px solid #ddd;
+      border-radius: 6px;
+      font-size: 16px;
+      color: #333;
+      background-color: #f9f9f9;
+      transition: border 0.3s ease;
+    }
+
+    input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+      border-color: #FFA500;
+      outline: none;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 150px;
+    }
+
+    button[type="submit"] {
+      background-color: #FFA500;
+      color: #fff;
+      padding: 15px;
+      border: none;
+      border-radius: 6px;
+      font-size: 18px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #e87e00;
+    }
+
+    /* Media Queries for responsiveness */
+    @media (max-width: 768px) {
+      .container {
+        padding: 20px;
       }
 
-      footer .social-icons {
-        justify-content: center;
+      h1 {
+        font-size: 28px;
+      }
+
+      button[type="submit"] {
+        font-size: 16px;
+        padding: 12px;
       }
     }
   </style>
@@ -182,34 +275,29 @@
     </ul>
   </nav>
 
-  <!-- FAQ -->
+  <!-- Contact Us -->
   <div class="container">
-    <h1>Frequently Asked Questions (FAQ)</h1>
-
-    <h2>1. What is Favoflex?</h2>
-    <p>Favoflex is an online marketplace offering customizable apparel and accessories, allowing customers to design their own products.</p>
-
-    <h2>2. How do I place an order?</h2>
-    <p>You can place an order by selecting a product, customizing it according to your preferences, and completing the checkout process.</p>
-
-    <h2>3. Can I return customized products?</h2>
-    <p>Unfortunately, customized products are non-returnable unless they are defective or damaged upon arrival.</p>
-
-    <h2>4. How can I track my order?</h2>
-    <p>You will receive a tracking number via email once your order is shipped, allowing you to track it on our courier's website.</p>
-
-    <h2>5. Do you offer international shipping?</h2>
-    <p>Yes, we offer international shipping for most products. Shipping costs and delivery times vary based on location.</p>
-
-    <h2>6. What payment methods do you accept?</h2>
-    <p>We accept all major credit/debit cards, PayPal, and other online payment methods for your convenience.</p>
-
-    <h2>7. How do I contact customer support?</h2>
-    <p>If you have any inquiries, please reach out to our customer support team at <a href="mailto:customercare@favoflex.com">customercare@favoflex.com</a>.</p>
+    <h1>Contact Us</h1>
+    <form action="https://formspree.io/f/xgvkawpz" method="POST">
+      <div>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+      <div>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+      </div>
+      <button type="submit">Send Message</button>
+    </form>
   </div>
 
   <!-- Footer -->
   <footer>
+    <!-- Section 1: Links -->
     <div class="footer-section">
       <h3>Quick Links</h3>
       <a href="https://favoflex.com">Home</a>
@@ -218,6 +306,7 @@
       <a href="#">Terms and Conditions</a>
     </div>
 
+    <!-- Section 2: Privacy and Terms -->
     <div class="footer-section">
       <h3>Social Links</h3>
       <div class="social-icons">
@@ -228,6 +317,7 @@
       </div>
     </div>
 
+    <!-- Section 3: Email and Address -->
     <div class="footer-section">
       <h3>Contact Us</h3>
       <p>Email: <span class="email"><a href="mailto:customercare@favoflex.com">customercare@favoflex.com</a></span></p>

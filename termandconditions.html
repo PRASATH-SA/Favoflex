@@ -4,13 +4,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Favoflex - Terms and Conditions</title>
+  <!-- Bootstrap Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
   <style>
+    /* Global transition for all elements */
+    * {
+      transition: all 0.3s ease; /* Transition for all properties */
+    }
+
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
       background-color: #f9f9f9;
+      overflow-x: hidden; /* Prevent horizontal scrolling */
     }
+
     /* Navbar */
     .navbar {
       background-color: #FFA500;
@@ -18,26 +27,32 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Added box shadow */
     }
+
     .navbar .logo img {
-      height: 40px;
-      border-radius: 8px;
+      height: 50px; /* Set the height to 50px */
+      border-radius: 5px; /* Set the border-radius to 5px */
     }
+
     .navbar ul {
       list-style: none;
       display: flex;
       margin: 0;
       padding: 0;
     }
+
     .navbar ul li {
       margin-left: 20px;
     }
+
     .navbar ul li a {
       color: #fff;
       text-decoration: none;
       font-size: 16px;
       transition: color 0.3s ease;
     }
+
     .navbar ul li a:hover {
       color: #367588;
     }
@@ -51,18 +66,116 @@
       border-radius: 20px;
       box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     }
+
     h1 {
       text-align: center;
       color: #FFA500;
       margin-bottom: 30px;
     }
+
     h2 {
       color: #367588;
       margin-top: 20px;
     }
+
     p {
       color: #555;
       line-height: 1.7;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #367588; /* Changed to secondary color */
+      color: #fff;
+      padding: 45px; /* Set padding to 45px */
+      text-align: center;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      gap: 30px;
+      box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1); /* Box shadow */
+    }
+
+    footer .footer-section {
+      flex: 1;
+      text-align: left;
+    }
+
+    footer .footer-section h3 {
+      margin-bottom: 15px;
+      color: #fff;
+    }
+
+    footer .footer-section a {
+      color: #fff;
+      text-decoration: none;
+      display: block;
+      margin: 5px 0;
+    }
+
+    footer .footer-section a:hover {
+      color: #FFA500; /* Hover color changes to orange */
+    }
+
+    footer .social-icons {
+      display: flex;
+      align-items: center;
+    }
+
+    footer .social-icons i {
+      font-size: 30px;
+      margin: 0 10px;
+      transition: transform 0.3s ease;
+    }
+
+    footer .social-icons i:hover {
+      transform: scale(1.1);
+    }
+
+    footer .social-icons span {
+      font-size: 20px;
+      margin-left: 10px;
+      font-weight: bold;
+    }
+
+    footer .footer-section p {
+      color: #f1f1f1; /* Lighter color for better visibility */
+      font-size: 14px;
+      display: inline; /* Make it inline for same-line display */
+    }
+
+    footer .footer-section .email {
+      font-weight: bold;
+      margin-left: 5px;
+    }
+
+    /* Media Query for Laptop (screens between 768px and 1024px) */
+    @media (min-width: 768px) and (max-width: 1024px) {
+      footer {
+        padding: 45px; /* Set padding to 45px for laptop */
+      }
+    }
+
+    /* Media Query for Mobile (screens smaller than 768px) */
+    @media (max-width: 768px) {
+      footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 45px; /* Set padding to 45px for mobile */
+      }
+
+      footer .footer-section {
+        text-align: center;
+        margin-bottom: 20px;
+        flex: none;
+      }
+
+      footer .social-icons {
+        justify-content: center;
+      }
     }
   </style>
 </head>
@@ -71,7 +184,7 @@
   <!-- Navbar -->
   <nav class="navbar">
     <a href="https://favoflex.com" class="logo">
-      <img src="/FAVOFLEX.jpg" alt="Favoflex Logo" />
+      <img src="favoflex.jpg" alt="Favoflex Logo" />
     </a>
     <ul>
       <li><a href="https://favoflex.com">Home</a></li>
@@ -114,9 +227,39 @@
     <p>We reserve the right to modify these terms at any time. Updates will be posted on this page, and continued use of the site signifies acceptance.</p>
 
     <h2>10. Contact Us</h2>
-    <p>If you have any questions about these terms, please contact us at customercare@favoflex.com.</p>
+    <p>If you have any questions about these terms, please contact us at <a href="mailto:customercare@favoflex.com">customercare@favoflex.com</a>.</p>
 
   </div>
+
+  <!-- Footer -->
+  <footer>
+    <!-- Section 1: Links -->
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <a href="https://favoflex.com">Home</a>
+      <a href="#">Contact Us</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms and Conditions</a>
+    </div>
+
+    <!-- Section 2: Privacy and Terms -->
+    <div class="footer-section">
+      <h3>Social Links</h3>
+      <div class="social-icons">
+        <a href="https://www.youtube.com/@FAVOFLEX" target="_blank"><i class="bi bi-youtube"></i></a>
+        <a href="https://www.facebook.com/FAVOFLEX" target="_blank"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.linkedin.com/in/favoflex-%E2%80%8E-966a3635a/" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a href="https://www.instagram.com/favoflex" target="_blank"><i class="bi bi-instagram"></i></a>
+      </div>
+    </div>
+
+    <!-- Section 3: Email and Address -->
+    <div class="footer-section">
+      <h3>Contact Us</h3>
+      <p>Email: <span class="email"><a href="mailto:customercare@favoflex.com">customercare@favoflex.com</a></span></p>
+      <p>Registered Office: Puducherry, Puducherry, India</p>
+    </div>
+  </footer>
 
 </body>
 </html>
