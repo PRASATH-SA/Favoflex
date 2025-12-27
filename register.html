@@ -132,7 +132,7 @@
       try {
         await signInWithPopup(auth, googleProvider);
         showLocalAlert('alertReg', 'Signed in with Google', 'success');
-        setTimeout(()=> location.href='home.html', 700);
+        setTimeout(()=> location.href='shop.html', 700);
       } catch (err) {
         showLocalAlert('alertReg', err.message, 'danger');
       }

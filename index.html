@@ -193,7 +193,7 @@
         await signInWithEmailAndPassword(auth, loginEmail.value, loginPassword.value);
         showAlert('Login successful', 'success');
         // redirect or load dashboard
-        setTimeout(()=> location.href='home.html', 800);
+        setTimeout(()=> location.href='shop.html', 800);
       } catch (err) {
         showAlert(err.message, 'danger');
       } finally {
